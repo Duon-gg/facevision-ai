@@ -1,0 +1,62 @@
+# ============================================
+# FaceVision AI — .gitignore
+# ============================================
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.egg
+
+# ---------- Data (too large for Git) ----------
+data/raw/
+data/processed/
+*.zip
+*.tar.gz
+
+# ---------- Model checkpoints ----------
+checkpoints/*.pth
+checkpoints/*.pt
+checkpoints/*.onnx
+!checkpoints/.gitkeep
+
+# ---------- IDE ----------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ---------- OS ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------- Logs ----------
+logs/*.txt
+logs/*.log
+!logs/metrics.json
+
+# ---------- Jupyter ----------
+.ipynb_checkpoints/
+
+# ---------- Virtual environments ----------
+.venv/
+venv/
+env/
+
+# ---------- Temp/debug files ----------
+_*.txt
+_*.log
+*.tmp
+
+# ---------- Thesis documents (keep in docs branch or separate) ----------
+# Uncomment below if you want to exclude thesis files from main branch:
+# FullBaocaoCV.md
+# 0[1-8]_*.md
+# THUYET_TRINH_DO_AN.md
+# *.pptx
+# Image Bao cao/
